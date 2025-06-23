@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Model</title>
+    <link rel="stylesheet" href="css/Contact.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            Discover Al-Dannieh
+            <span class="logo-line"></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="History.html">History</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="formTest" action="javascript:alert('Everything is ok');" class="form-flex">
+            <div class="form-group">
+                <label for="txtName">Name<span class="required">*</span></label>
+                <input type="text" id="txtName" name="name">
+                <div id="elmNameError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtAddress">Address</label>
+                <input type="text" id="txtAddress" name="address">
+                <div id="elmAddressError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtZipcode">Zip Code<span class="required">*</span></label>
+                <input type="text" id="txtZipcode" name="zipcode">
+                <div id="elmZipcodeError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+                <label for="selCountry">Country<span class="required">*</span></label>
+                <select id="selCountry" name="country">
+                    <option value="">Please select...</option>
+                    <option value="AA">Lebanon</option>
+                    <option value="BB">Australia</option>
+                    <option value="CC">Canada</option>
+                </select>
+                <div id="elmCountryError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="inline-group-opposite">
+                <div class="form-group">
+                    <label>Gender<span class="required">*</span></label>
+                    <label><input type="radio" name="gender" value="m"> Male</label>
+                    <label><input type="radio" name="gender" value="f"> Female</label>
+                    <div id="elmGenderError" class="errorMsg">&nbsp;</div>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferences<span class="required">*</span></label>
+                    <label><input type="checkbox" name="color" value="r">History</label>
+                    <label><input type="checkbox" name="color" value="g">Nature</label>
+                    <label><input type="checkbox" name="color" value="b">News</label>
+                    <div id="elmColorError" class="errorMsg">&nbsp;</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtPhone">Phone<span class="required">*</span></label>
+                <input type="text" id="txtPhone" name="phone">
+                <div id="elmPhoneError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtEmail">Email<span class="required">*</span></label>
+                <input type="text" id="txtEmail" name="email">
+                <div id="elmEmailError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtPassword">Password (6–8 characters)<span class="required">*</span></label>
+                <input type="password" id="txtPassword" name="password">
+                <div id="elmPasswordError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="form-group">
+                <label for="txtPWVerified">Verify Password<span class="required">*</span></label>
+                <input type="password" id="txtPWVerified" name="pwVerified">
+                <div id="elmPWVerifiedError" class="errorMsg">&nbsp;</div>
+            </div>
+
+            <div class="inline-buttons">
+                <input type="submit" value="SEND" id="btnSubmit">
+                <input type="reset" value="CLEAR" id="btnReset">
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="History.html">History</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> waelprogrammer028@gmail.com</p>
+                <p><strong>Phone:</strong> +961 81 162 451</p>
+                <p><strong>Address:</strong> Al-Dannieh, North Lebanon</p>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>Stay connected on social media</p>
+                <div class="social-icons">
+                    <a href="#" title="YouTube"><img src="https://img.icons8.com/color/48/youtube-play.png"
+                            alt="YouTube" width="24"></a>
+                    <a href="#" title="Instagram"><img src="https://img.icons8.com/color/48/instagram-new.png"
+                            alt="Instagram" width="24"></a>
+                    <a href="#" title="Facebook"><img src="https://img.icons8.com/color/48/facebook-new.png"
+                            alt="Facebook" width="24"></a>
+                    <a href="#" title="WhatsApp"><img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp"
+                            width="24"></a>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Stay Updated</h3>
+                <p>Return to Home page</p>
+                <a href="index.html" class="subscribe-button">Home</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Wael Taleb Developer. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/Contact.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#formTest").on("submit", function () {
+                return validateForm();
+            });
+            $("#btnReset").on("click", clearForm);
+            $("#txtName").focus();
+        });
+    </script>
+</body>
+
+</html>
